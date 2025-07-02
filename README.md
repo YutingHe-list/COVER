@@ -2,4 +2,13 @@
 ---
 [![Paper](https://img.shields.io/badge/CVPR-Conference-purple)](https://arxiv.org/abs/2506.20850)
 
-:loudspeaker: **[Homeomorphism Prior for False Positive and Negative Problem in Medical Image Dense Contrastive Representation Learning](https://ieeexplore.ieee.org/document/10879555)**, [Yuting He](https://yutinghe-list.github.io/), [Shuo Li](http://www.digitalimaginggroup.ca/members/shuo.php), ICCV 2025<br/>
+COVER is a groundbreaking framework to contrastive learning by modeling pixel-wise feature dispersion in a novel vector regression-based paradigm (Vector CL). By aligning semantic correspondences as displacement vectors, it enables precise, scalable, and annotation-free self-supervised pretraining—paving the way for more powerful and granular medical vision foundation models.
+
+## Paper
+
+<b>Vector Contrastive Learning For Pixel-Wise Pretraining In Medical Vision</b> <br/>
+[Yuting He](https://yutinghe-list.github.io/), [Shuo Li](https://scholar.google.com/citations?user=6WNtJa0AAAAJ&hl=en)* <br/>
+*Case Western Reserve University* <br/>
+ICCV, 2025 <br/>
+
+<p align="center"><img width="80%" src="fig/fig.png" /></p>
