@@ -2,7 +2,7 @@
 ---
 [![Paper](https://img.shields.io/badge/ICCV-Conference-purple)](https://arxiv.org/abs/2506.20850)
 
-:wrench: This open source projects are being gradually completed ...
+> :wrench: This open source projects are being gradually completed ...
 
 COVER is a groundbreaking framework to contrastive learning by modeling pixel-wise feature dispersion in a novel vector regression-based paradigm (Vector CL). By aligning semantic correspondences as displacement vectors, it enables precise, scalable, and annotation-free self-supervised pretraining—paving the way for more powerful and granular medical vision foundation models.
 
