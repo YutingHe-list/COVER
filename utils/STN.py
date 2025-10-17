@@ -15,7 +15,7 @@ class SpatialTransformer(nn.Module):
         grid = torch.stack(grids)  # y, x, z
         grid = torch.unsqueeze(grid, 0)  # add batch
         grid = grid.type(flow.dtype)
-        grid = grid.cuda()
+        grid = grid.to(src.device)
 
         new_locs = grid + flow
 

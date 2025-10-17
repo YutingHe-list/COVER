@@ -62,11 +62,22 @@ class SpatialTransformer2D(nn.Module):
 
 
 class SpatialTransform2D(object):
-    def __init__(self, do_rotation=True, angle_x=(-np.pi / 12, np.pi / 12), angle_y=(-np.pi / 12, np.pi / 12),
-                 do_scale=True, scale_x=(0.75, 1.25), scale_y=(0.75, 1.25),
-                 do_translate=True, trans_x=(-0.1, 0.1), trans_y=(-0.1, 0.1),
-                 do_shear=True, shear_xy=(-np.pi / 18, np.pi / 18), shear_yx=(-np.pi / 18, np.pi / 18),
-                 do_elastic_deform=True, alpha=(0., 1000.), sigma=(10., 13.)):
+    def __init__(self, do_rotation=True,
+                 angle_x=(-np.pi / 12, np.pi / 12),
+                 angle_y=(-np.pi / 12, np.pi / 12),
+                 do_scale=True,
+                 scale_x=(0.75, 1.25),
+                 scale_y=(0.75, 1.25),
+                 do_translate=True,
+                 trans_x=(-0.1, 0.1),
+                 trans_y=(-0.1, 0.1),
+                 do_shear=True,
+                 shear_xy=(-np.pi / 18, np.pi / 18),
+                 shear_yx=(-np.pi / 18, np.pi / 18),
+                 do_elastic_deform=True,
+                 alpha=(0., 1000.),
+                 sigma=(10., 13.),
+                 device='cpu'):
         self.do_rotation = do_rotation
         self.angle_x = angle_x
         self.angle_y = angle_y
@@ -86,6 +97,7 @@ class SpatialTransform2D(object):
 
         self.stn = SpatialTransformer2D()
         self.atn = AffineTransformer2D()
+        self.device = device
 
     def augment_spatial(self, data, code, mode='bilinear'):
         data = self.stn(data, code, mode=mode, padding_mode='zeros')
@@ -132,8 +144,8 @@ class SpatialTransform2D(object):
 
         coords += ctr[:, np.newaxis, np.newaxis] - grid
         coords = coords.astype(np.float32)
-        coords = torch.from_numpy(coords[np.newaxis, :, :, :]).cuda()
-        mat = torch.from_numpy(mat[np.newaxis].astype(np.float32)).cuda()
+        coords = torch.from_numpy(coords[np.newaxis, :, :, :]).to(device=self.device)
+        mat = torch.from_numpy(mat[np.newaxis].astype(np.float32)).to(device=self.device)
         return coords, mat
 
     def create_zero_centered_coordinate_mesh(self, shape):
@@ -236,18 +248,18 @@ class AppearanceTransform(object):
                 noise_y = np.random.randint(3, img_cols - block_noise_size_y - 3)
                 x[i, :,
                 noise_x:noise_x + block_noise_size_x,
-                noise_y:noise_y + block_noise_size_y] = torch.rand(block_noise_size_x, block_noise_size_y,).cuda() * 1.0
+                noise_y:noise_y + block_noise_size_y] = torch.rand(block_noise_size_x, block_noise_size_y,).to(x.device) * 1.0
                 cnt -= 1
         return x
 
     def augment_gaussian_noise(self, data, variance=0.05):
-        data = data + torch.from_numpy(np.random.normal(0.0, variance, size=data.shape).astype(np.float32)).cuda()
+        data = data + torch.from_numpy(np.random.normal(0.0, variance, size=data.shape).astype(np.float32)).to(data.device)
         return data
 
     def augment_gaussian_blur(self, data, sigma):
         data = data.data.cpu().numpy()
         data = gaussian_filter(data, sigma, order=0)
-        data = torch.from_numpy(data).cuda()
+        data = torch.from_numpy(data).to(data.device)
         return data
 
     def augment_contrast(self, data, factor):
