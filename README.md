@@ -3,7 +3,9 @@
 [![Paper](https://img.shields.io/badge/ICCV-Conference-purple)](https://arxiv.org/abs/2506.20850)
 
 > **ICCV 2025**
+
 > A new paradigm for pixel-wise pretraining — moving from **binary contrast** to **vector regression**.
+
 > 🧩 *Learning in vector-like relationship for pixel-wise features.*
 
 <p align="center"><img width="80%" src="fig/fig.png" /></p>
