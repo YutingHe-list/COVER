@@ -53,11 +53,3 @@ We’re continuously improving **COVER** to make it more general, modular, and s
 
 ---
 
-### 🎯 Vision
-
-> **From binary contrast to vector understanding.**
-
-> Our long-term goal is to establish a unified *vector-based* contrastive framework that bridges spatial geometry and semantics — applicable across 2D, 3D, and multimodal domains.
-
----
-
