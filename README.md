@@ -34,5 +34,40 @@
   Outperforms existing pixel-wise SSL methods across **8 tasks** and **4 medical imaging modalities**.
 
 ---
+## 🚀 Quick Start
 
+### 1️⃣ Installation
+
+```bash
+git clone https://github.com/YutingHe-list/COVER.git
+cd COVER
+conda create -n cover python=3.9
+conda activate cover
+pip install -r requirements.txt
+
+## 🛣️ Roadmap
+
+We’re continuously improving **COVER** to make it more general, modular, and scalable for diverse pixel/voxel-wise self-supervised learning tasks.
+
+| Status | Feature / Goal | Description |
+|:------:|:----------------|:-------------|
+| ✅ | **COVER 2D Implementation** | Core framework for 2D pixel-wise vector contrastive pretraining |
+| ✅ | **COVER Loss Functions** | Includes vector regression |
+| 🧩 | **COVER 3D Support** | Extend to 3D volumetric (CT/MRI) pretraining with voxel-level displacement regression |
+| 🔜 | **Pre-trained Weights Release** | Release pretrained models on ChestXray datasets |
+| 🔜 | **Benchmark Suite** | Provide unified training and evaluation scripts for downstream tasks |
+| 🚧 | **Multi-Modal Extension** | Extend COVER to PET/CT and MRI/US cross-modal learning |
+| 🚧 | **Video Representation Learning** | Apply COVER’s vector regression to temporal frame relationships |
+| 💡 | **Natural Image Experiments** | Generalize COVER beyond medical imaging to natural datasets |
+| 🧠 | **Hugging Face Hub** | Host pretrained checkpoints and demo notebooks for community usage |
+
+---
+
+### 🎯 Vision
+
+> **From binary contrast to vector understanding.**
+
+> Our long-term goal is to establish a unified *vector-based* contrastive framework that bridges spatial geometry and semantics — applicable across 2D, 3D, and multimodal domains.
+
+---
 
