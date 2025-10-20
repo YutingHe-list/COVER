@@ -19,10 +19,7 @@
 ---
 
 ### 🧭 1. From Binary Contrast → Vector Regression
-Traditional contrastive learning minimizes similarity distance between positive pairs  
-and maximizes it for negatives — a **binary** paradigm.  
-**COVER** transforms this into a **vector regression task**, where each pixel/voxel learns  
-a *displacement vector* representing **direction** and **magnitude** toward its correspondence.
+Traditional contrastive learning minimizes similarity distance between positive pairs and maximizes it for negatives — a **binary** paradigm. **COVER** transforms this into a **vector regression task**, where each pixel/voxel learns a *displacement vector* representing **direction** and **magnitude** toward its correspondence.
 
 <div align="center">
   <img src="fig/fig.png" width="80%" alt="Vector Contrastive Learning concept"/>
@@ -33,10 +30,7 @@ a *displacement vector* representing **direction** and **magnitude** toward its 
 ---
 
 ### 🔄 2. Controlling Feature Dispersion
-Conventional contrastive learning often suffers from **feature over-dispersion** —  
-pixels of the same semantic class get scattered in embedding space.  
-COVER introduces *vector constraints* to **quantify and regularize** dispersion,  
-preserving intra-class structure while maintaining discriminability.
+Conventional contrastive learning often suffers from **feature over-dispersion** — pixels of the same semantic class get scattered in embedding space. COVER introduces *vector constraints* to **quantify and regularize** dispersion, preserving intra-class structure while maintaining discriminability.
 
 ---
 
@@ -56,9 +50,7 @@ A unified pretraining pipeline that integrates:
 ---
 
 ### 🧬 4. Geometry-Aware Representation Learning
-By learning **how** and **where** pixels correspond rather than just **if** they correspond,  
-COVER captures geometric transformations, structural continuity, and spatial semantics —  
-crucial for dense prediction tasks like segmentation and registration.
+By learning **how** and **where** pixels correspond rather than just **if** they correspond, COVER captures geometric transformations, structural continuity, and spatial semantics — crucial for dense prediction tasks like segmentation and registration.
 
 ---
 
@@ -78,8 +70,6 @@ crucial for dense prediction tasks like segmentation and registration.
 > ✔️ Geometry-aware  
 > ✔️ Structure-preserving  
 > ✔️ Annotation-free self-supervision  
-
----
 
 ---
 
