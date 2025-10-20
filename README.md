@@ -2,14 +2,6 @@
 ---
 [![Paper](https://img.shields.io/badge/ICCV-Conference-purple)](https://arxiv.org/abs/2506.20850)
 
-> **ICCV 2025**
-
-> A new paradigm for pixel-wise pretraining — moving from **binary contrast** to **vector regression**.
-
-> 🧩 *Learning in vector-like relationship for pixel-wise features.*
-
-<p align="center"><img width="80%" src="fig/fig.png" /></p>
-
 **Vector Contrastive Learning (VCL)** is a new contrastive framework that learns *vector-based relationships* between features instead of binary “close/far” classification. It’s designed for **pixel-wise self-supervised pretraining**, especially in **medical vision** (2D/3D, multi-modal imaging).
 
 ---
@@ -19,19 +11,75 @@
 > In: Proc. International Conference on Computer Vision (ICCV), 2025,  
 > *arXiv preprint ([arXiv 2506.20850](https://arxiv.org/abs/2506.20850))*
 
-## 🚀 Highlights
+## ✨ Highlights
 
-- 🔄 **Vector Regression instead of Binary Contrast**  
-  Predict displacement vectors between pixel-wise features rather than classifying them as positive or negative.
+> **Vector Contrastive Learning (COVER)** — A geometry-aware self-supervised framework  
+> that learns *vector relationships* rather than binary similarities.
 
-- 🧩 **COVER Framework (COntrast in VEctor Regression)**  
-  A unified optimization flow combining vector regression and distance modeling.
+---
 
-- 🌐 **Multi-Scale Vector Pyramid**  
-  Learns consistent pixel-wise representation across different spatial resolutions.
+### 🧭 1. From Binary Contrast → Vector Regression
+Traditional contrastive learning minimizes similarity distance between positive pairs  
+and maximizes it for negatives — a **binary** paradigm.  
+**COVER** transforms this into a **vector regression task**, where each pixel/voxel learns  
+a *displacement vector* representing **direction** and **magnitude** toward its correspondence.
 
-- 🧬 **Strong Pixel-Level Representation**  
-  Outperforms existing pixel-wise SSL methods across **8 tasks** and **4 medical imaging modalities**.
+<div align="center">
+  <img src="fig/fig.png" width="80%" alt="Vector Contrastive Learning concept"/>
+  <br>
+  <em>Binary contrast collapses geometry; COVER learns geometric relationships in feature space.</em>
+</div>
+
+---
+
+### 🔄 2. Controlling Feature Dispersion
+Conventional contrastive learning often suffers from **feature over-dispersion** —  
+pixels of the same semantic class get scattered in embedding space.  
+COVER introduces *vector constraints* to **quantify and regularize** dispersion,  
+preserving intra-class structure while maintaining discriminability.
+
+---
+
+### 🧩 3. The COVER Framework (COntrast in VEctor Regression)
+
+A unified pretraining pipeline that integrates:
+- 🌀 **Self-Vector Regression (SeVR)** — Generates view transformations and displacement vector fields (DVFs) as self-supervision, eliminating annotation dependence.  
+- 🧮 **Mixture of Vectors (MoV)** — Learns a continuous mapping between feature distance and displacement vectors, capturing spatial continuity and correspondence ambiguity.  
+- 🌐 **Vector Pyramid Aggregation (VPA)** — Multi-scale vector prediction and fusion to encode both local and global structural relations.
+
+<div align="center">
+  <img src="fig/cover_framework.png" width="800" alt="COVER framework overview"/>
+  <br>
+  <em>The COVER pipeline: vector-based contrastive pretraining with multi-scale aggregation.</em>
+</div>
+
+---
+
+### 🧬 4. Geometry-Aware Representation Learning
+By learning **how** and **where** pixels correspond rather than just **if** they correspond,  
+COVER captures geometric transformations, structural continuity, and spatial semantics —  
+crucial for dense prediction tasks like segmentation and registration.
+
+---
+
+### 📈 5. Broad Applicability
+- Designed for **2D** and **3D** medical imaging (CT, MRI, US, X-ray)  
+- Supports **dense prediction** tasks: segmentation, registration, classification  
+- Applicable to multi-modal and potentially **natural image** domains  
+- Demonstrated **consistent performance gains** across 8 downstream benchmarks
+
+---
+
+### 💡 TL;DR
+
+> **COVER = Contrastive Learning → Vector Regression**  
+> From “Are they the same?” → **“How far and in which direction should they align?”**  
+>  
+> ✔️ Geometry-aware  
+> ✔️ Structure-preserving  
+> ✔️ Annotation-free self-supervision  
+
+---
 
 ---
 
