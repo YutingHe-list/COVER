@@ -93,11 +93,5 @@ We’re continuously improving **COVER** to make it more general, modular, and s
 
 ## 💖 Acknowledgements
 
-We’d like to express our sincere gratitude to everyone who contributed to the development of **COVER**. This work was supported by computational resources provided through **ACCESS** ([https://allocations.access-ci.org/](https://allocations.access-ci.org/)) and the **Jetstream2** cloud system ([https://jetstream2.exosphere.app/exosphere/](https://jetstream2.exosphere.app/exosphere/)).
-
-- 🧠 **Yuting He** — for initiating the idea and leading the implementation of vector contrastive learning  
-- 🎓 **Prof. Shuo Li** — for continuous guidance, deep insights, and academic supervision  
-- 🧑‍💻 Collaborators & students — for countless hours spent on code review, data preparation, and visualization
-
-We also thank the **open-source community** for building the foundations that made COVER possible. Finally, a heartfelt thanks to everyone who stars ⭐ this repository and shares feedback — your support fuels our research and helps push self-supervised medical AI forward!
+We’d like to express our sincere gratitude to everyone who contributed to the development of **COVER**. This work was supported by computational resources provided through **ACCESS** ([https://allocations.access-ci.org/](https://allocations.access-ci.org/)) and the **Jetstream2** cloud system ([https://jetstream2.exosphere.app/exosphere/](https://jetstream2.exosphere.app/exosphere/)). Thanks collaborators & students for countless hours spent on code review, data preparation, and visualization. We also thank the **open-source community** for building the foundations that made COVER possible. Finally, a heartfelt thanks to everyone who stars ⭐ this repository and shares feedback — your support fuels our research and helps push self-supervised medical AI forward!
 
