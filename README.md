@@ -34,16 +34,6 @@
   Outperforms existing pixel-wise SSL methods across **8 tasks** and **4 medical imaging modalities**.
 
 ---
-## 🚀 Quick Start
-
-### 1️⃣ Installation
-
-```bash
-git clone https://github.com/YutingHe-list/COVER.git
-cd COVER
-conda create -n cover python=3.9
-conda activate cover
-pip install -r requirements.txt
 
 ## 🛣️ Roadmap
 
