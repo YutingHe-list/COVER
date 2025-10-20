@@ -42,7 +42,7 @@ A unified pretraining pipeline that integrates:
 - 🌐 **Vector Pyramid Aggregation (VPA)** — Multi-scale vector prediction and fusion to encode both local and global structural relations.
 
 <div align="center">
-  <img src="fig/method.png" width="80%" alt="COVER framework overview"/>
+  <img src="fig/method.png" width="100%" alt="COVER framework overview"/>
   <br>
   <em>The COVER pipeline: vector-based contrastive pretraining with multi-scale aggregation.</em>
 </div>
