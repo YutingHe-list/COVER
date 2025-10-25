@@ -29,7 +29,7 @@ Contrastive learning minimizes similarity distance between positive pairs and ma
 ---
 
 ### 🔄 2. Controlling Feature Dispersion
-Conventional contrastive learning often suffers from **feature over-dispersion** — pixels of the same semantic class get scattered in embedding space. COVER introduces *vector constraints* to **quantify and regularize** dispersion, preserving intra-class structure while maintaining discriminability.
+Contrastive learning suffers from **feature over-dispersion** — pixels of the same semantic class get scattered in the embedding space. COVER introduces *vector constraints* to **quantify and regularize** dispersion, preserving intra-class structure while maintaining discriminability.
 
 ---
 
