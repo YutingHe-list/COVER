@@ -13,8 +13,7 @@
 
 ## ✨ Highlights
 
-> **Vector Contrastive Learning (COVER)** — A geometry-aware self-supervised framework  
-> that learns *vector relationships* rather than binary similarities.
+> **Vector Contrastive Learning (COVER)** — A geometry-aware self-supervised framework that learns *vector relationships* rather than binary similarities.
 
 ---
 
