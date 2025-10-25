@@ -18,7 +18,7 @@
 ---
 
 ### 🧭 1. From Binary Contrast → Vector Regression
-Traditional contrastive learning minimizes similarity distance between positive pairs and maximizes it for negatives — a **binary** paradigm. **COVER** transforms this into a **vector regression task**, where each pixel/voxel learns a *displacement vector* representing **direction** and **magnitude** toward its correspondence.
+Contrastive learning minimizes similarity distance between positive pairs and maximizes it for negatives — a **binary** paradigm. **COVER** transforms this into a **vector regression task**, where each pixel/voxel learns a *displacement vector* representing **direction** and **magnitude** toward its correspondence.
 
 <div align="center">
   <img src="fig/fig.png" width="80%" alt="Vector Contrastive Learning concept"/>
