@@ -95,15 +95,16 @@ We’d like to express our sincere gratitude to everyone who contributed to the 
 
 ---
 
-## Citation
+## 💡Citation
 If you use this code or use our pre-trained weights for your research, please cite our papers:
 ```
-@inproceedings{he2023geometric,
-  title={Geometric Visual Similarity Learning in 3D Medical Image Self-supervised Pre-training},
-  author={He, Yuting and Yang, Guanyu and Ge, Rongjun and Chen, Yang and Coatrieux, Jean-Louis and Wang, Boyu and Li, Shuo},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  pages={9538--9547},
-  year={2023}
+@InProceedings{He_2025_ICCV,
+    author    = {He, Yuting and Li, Shuo},
+    title     = {Vector Contrastive Learning For Pixel-Wise Pretraining In Medical Vision},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2025},
+    pages     = {19827-19837}
 }
 ```
 
