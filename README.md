@@ -93,3 +93,18 @@ We’re continuously improving **COVER** to make it more general, modular, and s
 
 We’d like to express our sincere gratitude to everyone who contributed to the development of **COVER**. This work was supported by computational resources provided through [**ACCESS**](https://allocations.access-ci.org/) and the [**Jetstream2** cloud system](https://jetstream2.exosphere.app/exosphere/). Thanks collaborators & students for countless hours spent on code review, data preparation, and visualization. We also thank the **open-source community** for building the foundations that made COVER possible. Finally, a heartfelt thanks to everyone who stars ⭐ this repository and shares feedback — your support fuels our research and helps push self-supervised medical AI forward!
 
+---
+
+## Citation
+If you use this code or use our pre-trained weights for your research, please cite our papers:
+```
+@inproceedings{he2023geometric,
+  title={Geometric Visual Similarity Learning in 3D Medical Image Self-supervised Pre-training},
+  author={He, Yuting and Yang, Guanyu and Ge, Rongjun and Chen, Yang and Coatrieux, Jean-Louis and Wang, Boyu and Li, Shuo},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={9538--9547},
+  year={2023}
+}
+```
+
+
