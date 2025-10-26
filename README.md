@@ -8,8 +8,7 @@
 
 > [**Vector Contrastive Learning For Pixel-Wise Pretraining In Medical Vision**](https://arxiv.org/abs/2506.20850),  
 > [Yuting He](https://yutinghe-list.github.io/), [Shuo Li](https://scholar.google.com/citations?user=6WNtJa0AAAAJ&hl=en)*,  
-> In: Proc. International Conference on Computer Vision (ICCV), 2025,  
-> *arXiv preprint ([arXiv 2506.20850](https://arxiv.org/abs/2506.20850))*
+> In: Proc. International Conference on Computer Vision (ICCV), 2025
 
 ## ✨ Highlights
 
